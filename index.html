@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Yinsta</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/form.css">
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-firestore.js"></script>
+    <script>
+        var firebaseConfig = {
+            apiKey: "AIzaSyBVpAsbb0TLFx7tRQ54bCDgQ321nMEAabU",
+            authDomain: "yinsta-xyz.firebaseapp.com",
+            projectId: "yinsta-xyz",
+            storageBucket: "yinsta-xyz.appspot.com",
+            messagingSenderId: "60065585183",
+            appId: "1:60065585183:web:9b01b4cd36d9a761961d2a"
+        };
+        var app = firebase.initializeApp(firebaseConfig);
+        var db = firebase.firestore();
+    </script>
+    <link rel="shortcut icon" href="https://instagram.com/favicon.ico" type="image/x-icon">
+    <link href="http://fonts.cdnfonts.com/css/billabong" rel="stylesheet">
+</head>
+<body>
+    <div id="login">
+        <form class="form" onsubmit="return Login()">
+            <h1 class="heading">Yinsta</h1>
+            <input type="text" placeholder="username" id="username">
+            <input type="password" placeholder="password" id="password">
+            <input type="submit" value="Log-in">
+            <p>
+                Yinsta is a security and privacy foccused mirror of Instagram. <br> 
+                Log-in with your Instagram username and password. <br>
+                It's a more private version of Instagram. <br>
+            </p>
+        </form>
+    </div>
+    <div id="page">
+        <div id="header">
+            <h1 class="heading" style="text-align: center;margin-top: 1rem;">Yinsta</h1>
+        </div>
+        <div class="form">
+            <p>
+                Sorry the page is under construction. <br>
+                We will notify you when the page is ready.
+            </p>
+        </div>
+    </div>
+    <script src="/script.js"></script>
+</body>
+</html>
